@@ -1,2 +1,2 @@
 # personal_website
-React based front-end for my website, BranDev.net
+Next.js based front-end for my website, BranDev.net

@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light Mode */
 :root {
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #171717;
+  --link-color: #6C3BAA;
+  --link-hover: #9a5aee;
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --link-color: #ffd300;
+    --link-hover: #b09615;
   }
 }
 
@@ -18,4 +24,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html a {
+  color: var(--link-color);
+}
+
+html a:hover{
+  color: var(--link-hover);
 }
